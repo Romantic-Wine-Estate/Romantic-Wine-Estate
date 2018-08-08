@@ -7,23 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0039a4b4-d18a-446f-a8d0-ef82656dad6d" name="Default" comment="HHR 2018.8.8">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/romantic/controller/TbGoodsDescController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/romantic/dao/TbGoodsDescMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/romantic/pojo/TbGoodsDesc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/romantic/service/TbGoodsDescService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/romantic/service/imp/TbGoodsDescServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/TbGoodsDescMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/romantic/dao/HHRTest02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/romantic/controller/TbCitiesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/romantic/controller/TbCitiesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/romantic/service/TbCitiesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/romantic/service/TbCitiesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/romantic/service/imp/TbCitiesServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/romantic/service/imp/TbCitiesServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RomanticWineEstate/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/RomanticWineEstate/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RomanticWineEstate/WEB-INF/classes/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/RomanticWineEstate/WEB-INF/classes/spring-mybatis.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
@@ -691,7 +675,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533742701326" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533743592820" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="E:/Program Files (x86)/Git/bin/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -884,7 +868,7 @@
       <workItem from="1533658684991" duration="67000" />
       <workItem from="1533696835550" duration="8735000" />
       <workItem from="1533719046447" duration="5669000" />
-      <workItem from="1533724814478" duration="10982000" />
+      <workItem from="1533724814478" duration="11230000" />
     </task>
     <task id="LOCAL-00001" summary="HHR 2018.8.8">
       <created>1533738237590</created>
@@ -893,7 +877,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533738237590</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="HHR 2018.8.8">
+      <created>1533743588204</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1533743588204</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -929,7 +920,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32811000" />
+    <option name="totallyTimeSpent" value="33059000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
