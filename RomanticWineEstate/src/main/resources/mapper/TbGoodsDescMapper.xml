@@ -5,10 +5,9 @@
     <sql id="Base_Column_List" >
     id,city_id ,city ,province_id ,create_time,update_time,is_alive
     </sql>
-    <select id="queryByCityId" resultType="TbCities" parameterType="String">
-        SELECT
-        <include refid="Base_Column_List"></include>
-        from tb_cities
-        where city_id= #{cityId}
+    <select id="searchKeyWords" resultType="TbGoodsDesc" parameterType="String">
+      select * from tb_goods_desc
+      where goodd_title like %#{keyWords}%
+
     </select>
 </mapper>
