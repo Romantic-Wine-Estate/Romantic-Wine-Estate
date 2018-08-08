@@ -2,6 +2,7 @@ package com.romantic.dao;
 
 import com.romantic.pojo.TbCities;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Component;
 
 /**
  * Authot:{Lenovo}

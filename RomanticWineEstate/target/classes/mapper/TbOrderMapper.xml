@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.romantic.dao.TbOrderMapper" >
+    <sql id="a" >
+        id,order_num,seller_id,payment,post_fee,status,payment_time,consign_time,end_time,close_time,
+        shipping_name,shipping_code,user_id,buyer_message,buyer_nick,buyer_rate,receiver_area_name,
+        receiver_mobile,receiver,expire,create_time,update_time,is_alive;
+    </sql>
+    <select id="selectByOrderNum" resultType="com.romantic.pojo.TbOrder" parameterType="java.lang.String">
+        SELECT
+        <include refid="a"></include>
+        from tb_order
+        where order_num= #{orderNum,jdbcType=VARCHAR}
+    </select>
+
+
+</mapper>
