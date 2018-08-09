@@ -1,5 +1,6 @@
 package com.romantic.service.imp;
 
+import com.romantic.dao.TbCitiesMapper;
 import com.romantic.pojo.TbGoodsDesc;
 import com.romantic.service.TbCitiesService;
 import com.romantic.service.TbGoodsDescService;
@@ -17,7 +18,7 @@ import org.springframework.stereotype.Service;
 public class TbGoodsDescServiceImp implements TbGoodsDescService {
 
     @Autowired
-    private TbCitiesService tbCitiesService;
+    private TbCitiesMapper tbCitiesMapper;
 
     @Override
     public TbGoodsDesc queryByGoodsId(String goods_id) {

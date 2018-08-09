@@ -23,6 +23,7 @@ public class TbGoodsDesc {
     private String brand;
     private String sendTimeType;
     private String goodsImage;
+    private String midPic;
     private String smallPic;
     private Date dateOfManufacture;
     private String qualityDate;
@@ -30,15 +31,15 @@ public class TbGoodsDesc {
     private String material;
     private float alcoholicStrength;
     private String storageMethod;
+
     private int capacity;
+
     private Timestamp createTime;
     private Timestamp updateTime;
     private String isAlive;
-
     public long getId() {
         return id;
     }
-
     public void setId(long id) {
         this.id = id;
     }
@@ -121,6 +122,14 @@ public class TbGoodsDesc {
 
     public void setGoodsImage(String goodsImage) {
         this.goodsImage = goodsImage;
+    }
+
+    public String getMidPic() {
+        return midPic;
+    }
+
+    public void setMidPic(String midPic) {
+        this.midPic = midPic;
     }
 
     public String getSmallPic() {
@@ -225,6 +234,7 @@ public class TbGoodsDesc {
                 ", brand='" + brand + '\'' +
                 ", sendTimeType='" + sendTimeType + '\'' +
                 ", goodsImage='" + goodsImage + '\'' +
+                ", midPic='" + midPic + '\'' +
                 ", smallPic='" + smallPic + '\'' +
                 ", dateOfManufacture=" + dateOfManufacture +
                 ", qualityDate='" + qualityDate + '\'' +
