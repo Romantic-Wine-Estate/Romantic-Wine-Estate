@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.TutorsMapper">
+
+    <resultMap type="UserInformation" id="UserInformationId">
+        <result property="userid" column="user_id" />
+        <result property="HeadP" column="head_pic" />
+        <result property="registerName" column="user_name" />
+        <result property="sex" column="sex" />
+        <result property="birth" column="birthday" />
+        <association property="address" resultMap="addressResult"/>
+    </resultMap>
+
+    <resultMap type="Address" id="addressResult">
+        <result property="addrID" column="is_default"/>
+    </resultMap>
+
+
+    <update id="updateHeadP" parameterType="String">
+        update tb_user set head_pic#{HeadP}
+        where user_id=#{userid}
+    </update>
+
+    <update id="updateBirth" parameterType="String">
+        update tb_user set birthday#{birth}
+        where user_id=#{userid}
+    </update>
+
+    <update id="updateSex" parameterType="String">
+        update tb_user set sex#{sex}
+        where user_id=#{userid}
+    </update>
+
+    <select id="getuserByemail" resultMap="userResult">
+select userid head_pic user_name sex birthday address from tb_user
+where user_id=#{userid}
+</select>
+</mapper>

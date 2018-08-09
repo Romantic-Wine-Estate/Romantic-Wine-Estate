@@ -7,5 +7,4 @@ package com.romantic.pojo;
  * Time:22:44
  */
 public class RollShow {
-    private int
 }
