@@ -7,6 +7,5 @@ import com.romantic.pojo.TbCities;
  * Date:{2018/8/4}{23:05}
  */
 public interface TbCitiesService {
-
     TbCities queryByCityId(String cityId);
 }

@@ -16,7 +16,8 @@ public class TbCitiesServiceImp implements TbCitiesService {
     private TbCitiesMapper tbCitiesMapper;
 
     @Override
-    public TbCities queryByCityId(String cityId) {
+    public TbCities queryByCityId(String cityId)
+    {
         return tbCitiesMapper.queryByCityId(cityId);
     }
 }
