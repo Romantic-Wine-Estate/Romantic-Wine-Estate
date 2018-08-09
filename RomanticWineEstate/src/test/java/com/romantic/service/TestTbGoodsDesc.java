@@ -24,7 +24,7 @@ public class TestTbGoodsDesc {
     private TbGoodsDescServiceImp tbGoodsDescServiceImp;
     @Test
     public void queryByPlaceOfArea() {
-        List<TbGoodsDesc> tbGoodsDescs = tbGoodsDescServiceImp.queryByPlaceOfArea("法国");
+        List<TbGoodsDesc> tbGoodsDescs = tbGoodsDescServiceImp.queryByPlaceOfArea("法国","orderBySellNum");
         Iterator it = tbGoodsDescs.iterator();
         while (it.hasNext())
         {
@@ -34,7 +34,7 @@ public class TestTbGoodsDesc {
 
     @Test
     public void queryByTaste() {
-        List<TbGoodsDesc> tbGoodsDescs = tbGoodsDescServiceImp.queryByTaste("平衡");
+        List<TbGoodsDesc> tbGoodsDescs = tbGoodsDescServiceImp.queryByTaste("平衡","orderBySellNum");
         Iterator it = tbGoodsDescs.iterator();
         while (it.hasNext()) {
             System.out.println(it.next());
@@ -43,7 +43,7 @@ public class TestTbGoodsDesc {
 
         @Test
         public void queryByCategory () {
-            List<TbGoodsDesc> tbGoodsDescs = tbGoodsDescServiceImp.queryByCategory("红葡萄酒");
+            List<TbGoodsDesc> tbGoodsDescs = tbGoodsDescServiceImp.queryByCategory("红葡萄酒","orderByPrice");
             Iterator it = tbGoodsDescs.iterator();
             while (it.hasNext()) {
                 System.out.println(it.next());
@@ -53,7 +53,17 @@ public class TestTbGoodsDesc {
 
     @Test
     public void queryGoodsPrice1() {
-        List<TbGoodsDesc> tbGoodsDescs = tbGoodsDescServiceImp.queryByGoodsPrice1("10-1000");
+        List<TbGoodsDesc> tbGoodsDescs = tbGoodsDescServiceImp.queryByGoodsPrice("10-1000","orderBySellNum");
+        Iterator it = tbGoodsDescs.iterator();
+        while (it.hasNext())
+        {
+            System.out.println(it.next());
+        }
+    }
+
+    @Test
+    public void queryGoodsPrice2() {
+        List<TbGoodsDesc> tbGoodsDescs = tbGoodsDescServiceImp.queryByGoodsPrice("500","orderBySellNum");
         Iterator it = tbGoodsDescs.iterator();
         while (it.hasNext())
         {

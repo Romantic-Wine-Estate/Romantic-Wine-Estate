@@ -24,33 +24,34 @@ public class TbGoodsDescController {
         return "hello";
     }
 
-    @RequestMapping("/placeOfArea.htm/{placeOfArea}")
+    @RequestMapping("/placeOfArea.htm/{placeOfArea,orderMethod}")
     @ResponseBody
-    public List<TbGoodsDesc> queryByPlaceOfArea(String placeOfArea)
+    public List<TbGoodsDesc> queryByPlaceOfArea(String placeOfArea,String orderMethod)
     {
-        return  tbGoodsDescService.queryByPlaceOfArea(placeOfArea);
+        return  tbGoodsDescService.queryByPlaceOfArea(placeOfArea,orderMethod);
     }
 
-    @RequestMapping("/taste.htm/{taste}")
+    @RequestMapping("/taste.htm/{taste,orderMethod}")
     @ResponseBody
-    public List<TbGoodsDesc> queryByTaste(String taste)
+    public List<TbGoodsDesc> queryByTaste(String taste,String orderMethod)
     {
-        return  tbGoodsDescService.queryByTaste(taste);
+        return  tbGoodsDescService.queryByTaste(taste,orderMethod);
     }
 
 
-    @RequestMapping("/category.htm/{category}")
+    @RequestMapping("/category.htm/{category,orderMethod}")
     @ResponseBody
-    public List<TbGoodsDesc> queryByCategory(String category)
+    public List<TbGoodsDesc> queryByCategory(String category,String orderMethod)
     {
-        return  tbGoodsDescService.queryByCategory(category);
+        return  tbGoodsDescService.queryByCategory(category,orderMethod);
     }
 
-    @RequestMapping("/goodsPrice.htm/{goodsPrice}")
+    @RequestMapping("/goodsPrice.htm/{goodsPrice,orderMethod}")
     @ResponseBody
-    public List<TbGoodsDesc> queryByGoodsPrice(String goodsPrice)
+    public List<TbGoodsDesc> queryByGoodsPrice(String goodsPrice,String OrderMethod)
     {
-        return  tbGoodsDescService.queryByGoodsPrice(goodsPrice);
+        System.out.println(goodsPrice);
+        return  tbGoodsDescService.queryByGoodsPrice(goodsPrice,OrderMethod);
     }
 
 

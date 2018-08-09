@@ -66,5 +66,15 @@ public class TestTbGoodsDesc {
         }
     }
 
+    @Test
+    public void queryGoodsPrice2() {
+        List<TbGoodsDesc> tbGoodsDescs = tbGoodsDescMapper.queryByGoodsPrice2(500);
+        Iterator it = tbGoodsDescs.iterator();
+        while (it.hasNext())
+        {
+            System.out.println(it.next());
+        }
+    }
+
 }
 

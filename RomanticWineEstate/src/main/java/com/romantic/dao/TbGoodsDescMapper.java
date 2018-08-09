@@ -15,8 +15,9 @@ public interface TbGoodsDescMapper {
     public List<TbGoodsDesc> queryByPlaceOfArea(@Param("placeOfArea") String placeOfArea);
     public List<TbGoodsDesc> queryByTaste(@Param("taste") String taste);
     public List<TbGoodsDesc> queryByCategory(@Param("category") String category);
-    public List<TbGoodsDesc>queryByGoodsPrice1(@Param("minPrice") int minPrice,@Param("maxPrice") int maxPrice);
-    public List<TbGoodsDesc>queryByGoodsPrice2(@Param("price") int price);
+    public List<TbGoodsDesc> queryByGoodsPrice1(@Param("minPrice") int minPrice,@Param("maxPrice") int maxPrice);
+    public List<TbGoodsDesc> queryByGoodsPrice2(@Param("price") int price);
+
 
 
 

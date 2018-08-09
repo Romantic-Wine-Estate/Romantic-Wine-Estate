@@ -15,45 +15,97 @@ import java.util.List;
  * Time:17:32
  */
 @Service
-public class TbGoodsDescServiceImp implements TbGoodsDescService {
+public class TbGoodsDescServiceImp implements TbGoodsDescService{
     @Autowired
     private TbGoodsDescMapper tbGoodsDescMapper;
-
     @Override
-    public List<TbGoodsDesc> queryByPlaceOfArea(String placeOfArea) {
-        return tbGoodsDescMapper.queryByPlaceOfArea(placeOfArea);
+    public List<TbGoodsDesc> queryByPlaceOfArea(String placeOfArea,String orderMethod) {
+       List<TbGoodsDesc>  tempList=tbGoodsDescMapper.queryByPlaceOfArea(placeOfArea);
+        if(orderMethod.equals("default"))
+        {
+            return tempList;
+        }
+        if(orderMethod.equals("orderByPrice"))
+        {
+            return TbGoodsDesc.sortByPrice(tempList);
+        }
+        else
+        {
+            return TbGoodsDesc.sortBySellNum(tempList);
+        }
     }
-
     @Override
-    public List<TbGoodsDesc> queryByTaste(String taste) {
-        return tbGoodsDescMapper.queryByTaste(taste);
+    public List<TbGoodsDesc> queryByTaste(String taste,String orderMethod) {
+        List<TbGoodsDesc>  tempList= tbGoodsDescMapper.queryByTaste(taste);
+        if(orderMethod.equals("default"))
+        {
+            return tempList;
+        }
+        if(orderMethod.equals("orderByPrice"))
+        {
+            return TbGoodsDesc.sortByPrice(tempList);
+        }
+        else
+        {
+            return TbGoodsDesc.sortBySellNum(tempList);
+        }
     }
-
     @Override
-    public List<TbGoodsDesc> queryByCategory(String category) {
-        return tbGoodsDescMapper.queryByCategory(category);
+    public List<TbGoodsDesc> queryByCategory(String category,String orderMethod) {
+        List<TbGoodsDesc>  tempList= tbGoodsDescMapper.queryByCategory(category);
+        if(orderMethod.equals("default"))
+        {
+            return tempList;
+        }
+        if(orderMethod.equals("orderByPrice"))
+        {
+            return TbGoodsDesc.sortByPrice(tempList);
+        }
+        else
+        {
+            return TbGoodsDesc.sortBySellNum(tempList);
+        }
     }
-
     @Override
-    public List<TbGoodsDesc> queryByGoodsPrice(String goodsPrice) {
+    public List<TbGoodsDesc> queryByGoodsPrice(String goodsPrice,String orderMethod) {
         if (goodsPrice.contains("-")) {
-            String priceString1[] = goodsPrice.split("-");
+            String priceString1[] = goodsPrice.split("\\-");
             int priceInt1[] = new int[priceString1.length];
             for (int i = 0; i < priceString1.length; i++) {
                 priceInt1[i] = Integer.parseInt(priceString1[i]);
             }
-            return tbGoodsDescMapper.queryByGoodsPrice1(priceInt1[0], priceInt1[1]);
-        } else {
-
-            String priceString2[] = goodsPrice.split("+");
-            int priceInt2[] = new int[priceString2.length];
-            for (int i = 0; i < priceString2.length; i++) {
-                priceInt2[i] = Integer.parseInt(priceString2[i]);
+            List<TbGoodsDesc>  tempList= tbGoodsDescMapper.queryByGoodsPrice1(priceInt1[0], priceInt1[1]);
+            if(orderMethod.equals("default"))
+            {
+                return tempList;
             }
-            return tbGoodsDescMapper.queryByGoodsPrice2(priceInt2[0]);
+            if(orderMethod.equals("orderByPrice"))
+            {
+                return TbGoodsDesc.sortByPrice(tempList);
+            }
+            else
+            {
+                return TbGoodsDesc.sortBySellNum(tempList);
+            }
+        } else {
+            List<TbGoodsDesc>  tempList= tbGoodsDescMapper.queryByGoodsPrice2(Integer.parseInt(goodsPrice));
+            if(orderMethod.equals("default"))
+            {
+                return tempList;
+            }
+            if(orderMethod.equals("orderByPrice"))
+            {
+                return TbGoodsDesc.sortByPrice(tempList);
+            }
+            else
+            {
+                return TbGoodsDesc.sortBySellNum(tempList);
+            }
 
         }
 
 
     }
+
+
 }

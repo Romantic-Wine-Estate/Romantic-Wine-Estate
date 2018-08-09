@@ -11,10 +11,10 @@ import java.util.List;
  * Time:17:26
  */
 public interface TbGoodsDescService {
-    public List<TbGoodsDesc> queryByPlaceOfArea(String placeOfArea);
-    public List<TbGoodsDesc> queryByTaste(String taste);
-    public List<TbGoodsDesc> queryByCategory(String category);
-    public List<TbGoodsDesc> queryByGoodsPrice(String goodsPrice);
+    public List<TbGoodsDesc> queryByPlaceOfArea(String placeOfArea,String orderMethod);
+    public List<TbGoodsDesc> queryByTaste(String taste,String orderMethod);
+    public List<TbGoodsDesc> queryByCategory(String category,String orderMethod);
+    public List<TbGoodsDesc> queryByGoodsPrice(String goodsPrice,String orderMethod);
 
 
 
