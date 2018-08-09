@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.romantic.dao.TbCartDao" >
+    <sql id="Base_Column_List" >
+    id,user_id,goods_id,goods_num,create_time,update_time,is_alive
+    </sql>
+    <select id="selectById" resultType="TbCart" parameterType="int">
+        SELECT
+        <include refid="Base_Column_List"></include>
+        from tb_cart
+        where id= #{id} and is_alive='1'
+    </select>
+<!--通过用户的ID来查询用户的购物车-->
+    <select id="selectByUserId" resultType="TbCart" parameterType="String">
+        SELECT
+        <include refid="Base_Column_List"></include>
+        FROM tb_cart
+        where user_id=#{userId} and is_alive='1'
+    </select>
+    <!--向购物车中添加商品-->
+    <insert id="insertGoods" >
+        INSERT INTO tb_cart(user_id,goods_id,goods_num,create_time)
+         values(#{userId},#{goodsId},#{goodsNum},#{createTime});
+    </insert>
+    <!--通过用户id和商品id来查看购物车中是否存在该商品-->
+    <select id="hasGoods" resultType="TbCart">
+        select * from tb_cart where user_id=#{userId}and goods_id=#{goodsId} and is_alive='1'
+    </select>
+    <!--更新数据库中某件商品的数量-->
+    <update id="updateGoodsNum">
+        update tb_cart set goods_num=#{goodsNum}
+        where user_id=#{userId} and goods_id=#{goodsId}
+    </update>
+    <!--查询商品库存数量-->
+    <select id="queryProductStock" resultType="Product" parameterType="String">
+        select * from tb_seller_goods where goods_id=#{goodsId}
+    </select>
+    <!--通过用户id全选或取消选择用户购物车中的商品-->
+    <update id="choose">
+        update tb_cart set is_choose=#{amount} where user_id=#{userId} and is_alive='1'
+    </update>
+    <!--根据用户id和商品id来勾选商品-->
+    <update id="chooseSingle">
+        update tb_cart set is_choose='1'
+        where user_id=#{userId} and goods_id=#{goodsId} and is_alive='1'
+    </update>
+    <!--通过用户id删除购物车中选中的商品-->
+    <update id="deleteByUserId" parameterType="String">
+        update tb_cart set is_alive='0' where user_id=#{userId} and is_choose='1'
+    </update>
+</mapper>
