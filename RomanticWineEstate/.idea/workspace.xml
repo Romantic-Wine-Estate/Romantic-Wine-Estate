@@ -15,89 +15,61 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@60.205.210.48" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@60.205.210.48" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@60.205.210.48" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="romantic: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TbGoodsDescMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TbGoodsDescMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TbGoodsDescServiceImp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/service/imp/TbGoodsDescServiceImp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TbGoodsDescService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/service/TbGoodsDescService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TbGoodsDescController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/controller/TbGoodsDescController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="29" column="54" lean-forward="true" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#939#940#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="242">
+              <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TbGoodsDesc.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/pojo/TbGoodsDesc.java">
+      <file leaf-file-name="TbCitiesMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TbCitiesMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-551">
-              <caret line="59" column="22" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="266">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TbGoodsDescMapper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/dao/TbGoodsDescMapper.java">
+      <file leaf-file-name="TbGoodsDescMapper.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TbGoodsDescMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            <state relative-caret-position="171">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -109,25 +81,39 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>serv</find>
+      <find>TbCities</find>
+    </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/romantic/pojo/tbGoodsDesc.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/romantic/pojo/TbGoodsDesc.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/romantic/dao/TbGoodsDescDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/TbGoodsDescMapper.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/romantic/service/imp/TbGoodsDescService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/romantic/service/imp/imp/TbGoodsDescServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/romantic/controller/TbGoodsDescController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/romantic/service/imp/TbGoodsDescServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/romantic/dao/TbGoodsDescMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/romantic/service/TbGoodsDescService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/romantic/service/imp/TbGoodsDescServiceImp.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/romantic/service/TbGoodsDescServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/search.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/HH.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/romantic/controller/TbGoodsDescController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/romantic/dao/TbGoodsDescMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/TbGoodsDescMapper.xml" />
       </list>
     </option>
   </component>
@@ -167,17 +153,15 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="455" />
-    <option name="y" value="15" />
-    <option name="width" value="1285" />
-    <option name="height" value="935" />
+    <option name="x" value="-10" />
+    <option name="width" value="1630" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -276,6 +260,21 @@
               <item name="RomanticWineEstate" type="b2602c69:ProjectViewProjectNode" />
               <item name="RomanticWineEstate" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RomanticWineEstate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RomanticWineEstate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RomanticWineEstate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RomanticWineEstate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -293,25 +292,62 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="romantic" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="RomanticWineEstate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RomanticWineEstate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="romantic" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RomanticWineEstate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RomanticWineEstate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="romantic" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="F:/romantic" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.romantic.service" />
+      <recent name="com.romantic.dao" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.romantic.service.imp.imp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\Desktop\learngit\Romantic-Wine-Estate\RomanticWineEstate\src\main\webapp" />
+      <recent name="C:\Users\ASUS\Desktop\learngit\Romantic-Wine-Estate\RomanticWineEstate\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\ASUS\Desktop\learngit\Romantic-Wine-Estate\RomanticWineEstate\src\main\java\com\romantic\controller" />
+      <recent name="C:\Users\ASUS\Desktop\learngit\Romantic-Wine-Estate\RomanticWineEstate\src\main\resources\mapper" />
+      <recent name="C:\Users\ASUS\Desktop\learngit\Romantic-Wine-Estate\RomanticWineEstate\src\main\java\com\romantic\service\imp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -326,9 +362,101 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TbGoodsDescMapperTest.testSearchKeyWords">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="TbGoodsDescMapperTest.searchKeyWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RomanticWineEstate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.romantic.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.romantic.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.romantic.dao.TbGoodsDescMapperTest" />
+      <option name="METHOD_NAME" value="searchKeyWords" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TbGoodsDescMapperTest.testSearchKeyWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RomanticWineEstate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.romantic.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.romantic.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.romantic.dao.TbGoodsDescMapperTest" />
+      <option name="METHOD_NAME" value="testSearchKeyWords" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TbGoodsDescMapperTest.testsearchKeyWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RomanticWineEstate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.romantic.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.romantic.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.romantic.dao.TbGoodsDescMapperTest" />
+      <option name="METHOD_NAME" value="testsearchKeyWords" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TbGoodsDescServiceTest.testSearchKeyWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RomanticWineEstate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.romantic.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.romantic.service" />
+      <option name="MAIN_CLASS_NAME" value="com.romantic.service.TbGoodsDescServiceTest" />
+      <option name="METHOD_NAME" value="testSearchKeyWords" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -439,6 +567,21 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Tomcat" />
+      <item itemvalue="JUnit.TbGoodsDescMapperTest.searchKeyWords" />
+      <item itemvalue="JUnit.TbGoodsDescMapperTest.testsearchKeyWords" />
+      <item itemvalue="JUnit.TbGoodsDescMapperTest.testSearchKeyWords" />
+      <item itemvalue="JUnit.TbGoodsDescServiceTest.testSearchKeyWords" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TbGoodsDescMapperTest.testSearchKeyWords" />
+        <item itemvalue="JUnit.TbGoodsDescServiceTest.testSearchKeyWords" />
+        <item itemvalue="JUnit.TbGoodsDescMapperTest.testsearchKeyWords" />
+        <item itemvalue="JUnit.TbGoodsDescMapperTest.searchKeyWords" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -453,11 +596,47 @@
       <workItem from="1533579707714" duration="2369000" />
       <workItem from="1533695367767" duration="1067000" />
       <workItem from="1533706514717" duration="13272000" />
+      <workItem from="1533749789456" duration="997000" />
+      <workItem from="1533776209979" duration="26276000" />
+      <workItem from="1533820625387" duration="3487000" />
+      <workItem from="1533828948185" duration="558000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TbGoodsDescMapperTest_testsearchKeyWords - 2018.08.09 at 11h 53m 33s.xml">
+      <configuration name="TbGoodsDescMapperTest.testsearchKeyWords" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TbGoodsDescMapperTest_testSearchKeyWords - 2018.08.09 at 14h 52m 11s.xml">
+      <configuration name="TbGoodsDescMapperTest.testSearchKeyWords" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TbGoodsDescMapperTest_testSearchKeyWords - 2018.08.09 at 14h 52m 50s.xml">
+      <configuration name="TbGoodsDescMapperTest.testSearchKeyWords" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TbGoodsDescServiceTest_testSearchKeyWords - 2018.08.09 at 15h 12m 03s.xml">
+      <configuration name="TbGoodsDescServiceTest.testSearchKeyWords" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TbGoodsDescServiceTest_testSearchKeyWords - 2018.08.09 at 15h 14m 02s.xml">
+      <configuration name="TbGoodsDescServiceTest.testSearchKeyWords" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TbGoodsDescServiceTest_testSearchKeyWords - 2018.08.09 at 15h 37m 14s.xml">
+      <configuration name="TbGoodsDescServiceTest.testSearchKeyWords" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TbGoodsDescMapperTest_testSearchKeyWords - 2018.08.09 at 21h 38m 23s.xml">
+      <configuration name="TbGoodsDescMapperTest.testSearchKeyWords" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TbGoodsDescMapperTest_testSearchKeyWords - 2018.08.09 at 21h 40m 12s.xml">
+      <configuration name="TbGoodsDescMapperTest.testSearchKeyWords" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TbGoodsDescMapperTest_testSearchKeyWords - 2018.08.09 at 21h 42m 19s.xml">
+      <configuration name="TbGoodsDescMapperTest.testSearchKeyWords" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TbGoodsDescMapperTest_testSearchKeyWords - 2018.08.09 at 21h 58m 26s.xml">
+      <configuration name="TbGoodsDescMapperTest.testSearchKeyWords" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16708000" />
+    <option name="totallyTimeSpent" value="48026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -469,31 +648,32 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.0" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.18518518" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20056497" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25670242" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19571045" />
       <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.0" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32768363" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.0" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,82 +685,92 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TbGoodsDescMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2016" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1398">
-          <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
-          <folding>
-            <element signature="e#1170#1190#0" expanded="true" />
-            <element signature="e#1229#1237#0" expanded="true" />
-            <element signature="e#1281#1291#0" expanded="true" />
-            <element signature="e#1338#1351#0" expanded="true" />
-            <element signature="e#1429#1441#0" expanded="true" />
-            <element signature="e#1484#1496#0" expanded="true" />
-            <element signature="e#1545#1559#0" expanded="true" />
-            <element signature="e#1631#1643#0" expanded="true" />
-            <element signature="e#1757#1791#0" expanded="true" />
-            <element signature="e#1893#1924#0" expanded="true" />
-            <element signature="e#1973#1991#0" expanded="true" />
-            <element signature="e#2079#2096#0" expanded="true" />
-            <element signature="e#2144#2161#0" expanded="true" />
-            <element signature="e#2563#2583#0" expanded="true" />
-            <element signature="e#2617#2629#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-864" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/pojo/TbCities.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/service/TbCitiesService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/controller/TbCitiesController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="42" column="57" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="242" column="12" selection-start-line="242" selection-start-column="12" selection-end-line="242" selection-end-column="12" />
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/service/imp/TbGoodsDescServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="551">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/service/TbGoodsDescService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/controller/TbGoodsDescController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/pojo/TbGoodsDesc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-551">
+        <state relative-caret-position="1102">
           <caret line="59" column="22" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/dao/TbGoodsDescMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TbGoodsDescMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/service/imp/TbGoodsDescServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/service/TbGoodsDescService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/controller/TbGoodsDescController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="29" column="54" lean-forward="true" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/pojo/TbGoodsDesc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="59" column="22" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -598,48 +788,211 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/controller/TbGoodsDescController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/dao/TbGoodsDescMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="29" column="54" lean-forward="true" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#939#940#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/service/TbGoodsDescService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/service/imp/TbGoodsDescServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="171">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TbGoodsDescMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="266">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/service/imp/TbGoodsDescServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b439f068-7399-470f-ba49-f18032a367fb/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="286" selection-start-line="286" selection-end-line="286" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/dao/TbGoodsDescMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state relative-caret-position="300">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/service/TbGoodsDescService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/dataSources.local.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/dataSources.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/dataSources/b439f068-7399-470f-ba49-f18032a367fb.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1767" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-875">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1281#1291#0" expanded="true" />
+            <element signature="e#1335#1348#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/pojo/TbCities.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/dao/TbCitiesMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/service/TbCitiesService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/search.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/controller/TbCitiesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1678" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/page/hello.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/romantic/service/TbGoodsDescServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/service/imp/TbCitiesServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/service/imp/TbGoodsDescServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="32" column="9" selection-start-line="27" selection-start-column="7" selection-end-line="32" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/HH.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/pojo/TbGoodsDesc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="59" column="22" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://b439f068-7399-470f-ba49-f18032a367fb/schema/romantic/table/tb_goods_desc">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/romantic/dao/TbGoodsDescMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/controller/TbGoodsDescController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TbCitiesMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TbGoodsDescMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>

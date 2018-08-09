@@ -4,8 +4,7 @@
 <mapper namespace="com.romantic.dao.TbGoodsDescMapper" >
 
     <select id="searchKeyWords" resultType="com.romantic.pojo.TbGoodsDesc" parameterType="java.lang.String">
-
-      select id,goods_title,goods_price,sell_num,small_pic from tb_goods_desc
+      select * from tb_goods_desc
       where goods_title like concat(concat('%',#{keyWords}),'%')
 
     </select>

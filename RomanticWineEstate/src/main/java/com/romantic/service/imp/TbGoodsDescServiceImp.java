@@ -8,6 +8,7 @@ import org.apdplat.word.segmentation.Word;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -22,15 +23,15 @@ public class TbGoodsDescServiceImp implements TbGoodsDescService {
     private TbGoodsDescMapper tbGoodsDescMapper;
 
     @Override
-    public List<TbGoodsDesc> searchKeyWords(String keyWords) {
+    public List<TbGoodsDesc> searchKeyWords(List<Word> keyWords) {
+        List<TbGoodsDesc> result=null;
+        Iterator<Word> it=keyWords.iterator();
+        while(it.hasNext())
+        {
+            String aa=it.next().toString();
+            result=tbGoodsDescMapper.searchKeyWords(aa);
+        }
 
-        String str="法国赤霞珠干红葡萄酒";
-        List<Word> words = WordSegmenter.seg("str");
-        System.out.println(words);
-
-
-
-
-        return tbGoodsDescMapper.searchKeyWords(keyWords);
+        return result;
     }
 }
