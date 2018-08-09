@@ -1,4 +1,5 @@
 <component name="InspectionProjectProfileManager">
+<<<<<<< HEAD
   <profile version="1.0" is_locked="true">
     <option name="myName" value="Project Default" />
     <inspection_tool class="AbsoluteAlignmentInUserInterface" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -2779,5 +2780,10 @@
       </option>
     </inspection_tool>
     <inspection_tool class="gwtRawAsyncCallback" enabled="true" level="WARNING" enabled_by_default="true" />
+=======
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="SpringJavaInjectionPointsAutowiringInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+>>>>>>> master
   </profile>
 </component>
