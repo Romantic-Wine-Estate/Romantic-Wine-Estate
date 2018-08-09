@@ -12,9 +12,9 @@ import javax.annotation.Resource;
  * Authot:{Lenovo}
  * Date:{2018/8/4}{18:39}
  */
-@RunWith(SpringJUnit4ClassRunner. class)
+@RunWith(SpringJUnit4ClassRunner.class)
 //告诉junit spring配置文件
-@ContextConfiguration({"classpath:spring-mybatis.xml"})
+@ContextConfiguration(value = {"classpath:spring-mybatis.xml"})
 public class Test01 {
     @Resource
     private TbCitiesMapper tb_provincesDao;
@@ -23,5 +23,13 @@ public class Test01 {
         String  cityId="110200";
         TbCities tbProvinces =tb_provincesDao.queryByCityId(cityId);
         System.out.println(tbProvinces.toString());
+    }
+
+    @Test
+    public void test() {
+        System.out.println(Math.random());
+        System.out.println(Math.random()*9);
+        System.out.println(Math.random()+9+1);
+        System.out.println((Math.random()*9+1)*100000);
     }
 }
