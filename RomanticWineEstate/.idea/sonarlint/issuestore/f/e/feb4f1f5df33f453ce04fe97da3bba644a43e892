@@ -1,13 +1,0 @@
-
-Ssquid:S1854"7Remove this useless assignment to local variable "day".(éãƒš8ò”ÈøÑ,
-S
-squid:S106"9Replace this use of System.out or System.err by a logger.(œú—'8ˆúÄøÑ,
-Dsquid:S1481"(Remove this unused "day" local variable.(éãƒš8ò”ÈøÑ,
-Ysquid:S1854"8Remove this useless assignment to local variable "hour".(ôìÖòÿÿÿÿÿ8ü¼ùÑ,
-Esquid:S1481")Remove this unused "year" local variable.(µÉôÎ8ò”ÈøÑ,
-Tsquid:S1854"8Remove this useless assignment to local variable "year".(µÉôÎ8ò”ÈøÑ,
-Jsquid:S1481")Remove this unused "hour" local variable.(ôìÖòÿÿÿÿÿ8ü¼ùÑ,
-Usquid:S1854"9Remove this useless assignment to local variable "month".(¿»«ã8ò”ÈøÑ,
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ8±ñ—øÑ,
-Fsquid:S1481"*Remove this unused "month" local variable.(¿»«ã8ò”ÈøÑ,
