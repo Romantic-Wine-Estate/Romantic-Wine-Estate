@@ -1,0 +1,5 @@
+
+Hsquid:S1481",Remove this unused "tbOrder" local variable.(¬èµ•8»Ì›øÑ,
+bsquid:S2184"FCast one of the operands of this multiplication operation to a "long".(Œ’ÑŸ8»Ì›øÑ,
+nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–æ°“8»Ì›øÑ,
+Wsquid:S1854";Remove this useless assignment to local variable "tbOrder".(¬èµ•8»Ì›øÑ,
