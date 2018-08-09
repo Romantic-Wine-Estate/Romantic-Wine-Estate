@@ -1,8 +1,12 @@
 package com.romantic.dao;
 
 import com.romantic.pojo.TbCities;
+<<<<<<< HEAD
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
+=======
+
+>>>>>>> master
 
 /**
  * Authot:{Lenovo}
@@ -10,5 +14,5 @@ import org.springframework.stereotype.Component;
  */
 
 public interface TbCitiesMapper {
-    TbCities queryByCityId(@Param("cityId") String cityId);
+    TbCities queryByCityId( String cityId);
 }

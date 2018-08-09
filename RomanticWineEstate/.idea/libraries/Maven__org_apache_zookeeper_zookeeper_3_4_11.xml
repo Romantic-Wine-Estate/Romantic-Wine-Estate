@@ -1,6 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: org.apache.zookeeper:zookeeper:3.4.11">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://$PROJECT_DIR$/../../../maven_repository/org/apache/zookeeper/zookeeper/3.4.11/zookeeper-3.4.11.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -8,6 +9,15 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../../../maven_repository/org/apache/zookeeper/zookeeper/3.4.11/zookeeper-3.4.11-sources.jar!/" />
+=======
+      <root url="jar://$USER_HOME$/.m2/repository/org/apache/zookeeper/zookeeper/3.4.11/zookeeper-3.4.11.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.m2/repository/org/apache/zookeeper/zookeeper/3.4.11/zookeeper-3.4.11-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.m2/repository/org/apache/zookeeper/zookeeper/3.4.11/zookeeper-3.4.11-sources.jar!/" />
+>>>>>>> master
     </SOURCES>
   </library>
 </component>

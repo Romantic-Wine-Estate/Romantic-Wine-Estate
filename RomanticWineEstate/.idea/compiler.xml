@@ -9,7 +9,11 @@
         <module name="RomanticWineEstate" />
       </profile>
     </annotationProcessing>
+<<<<<<< HEAD
     <bytecodeTargetLevel target="1.8">
+=======
+    <bytecodeTargetLevel>
+>>>>>>> master
       <module name="RomanticWineEstate" target="1.7" />
     </bytecodeTargetLevel>
   </component>
