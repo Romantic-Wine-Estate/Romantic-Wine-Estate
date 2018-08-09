@@ -18,28 +18,28 @@
 
     </settings>
 
-   <!--
-    <properties resource="jdbc.properties"></properties>
-    <settings>
-        <setting name="logImpl" value="LOG4J"/>
-    </settings>
-    <typeAliases>
-        <package name="com.pojo"/>
-    </typeAliases>
-    <environments default="development">
+    <!--
+     <properties resource="jdbc.properties"></properties>
+     <settings>
+         <setting name="logImpl" value="LOG4J"/>
+     </settings>
+     <typeAliases>
+         <package name="com.pojo"/>
+     </typeAliases>
+     <environments default="development">
 
-        <environment id="development">
-            <transactionManager type="JDBC"/>
-            <dataSource type="POOLED">
-                <property name="driver" value="${driver}"/>
-                <property name="url" value="${url}"/>
-                <property name="username" value="${username}"/>
-                <property name="password" value="${password}"/>
-            </dataSource>
-        </environment>
+         <environment id="development">
+             <transactionManager type="JDBC"/>
+             <dataSource type="POOLED">
+                 <property name="driver" value="${driver}"/>
+                 <property name="url" value="${url}"/>
+                 <property name="username" value="${username}"/>
+                 <property name="password" value="${password}"/>
+             </dataSource>
+         </environment>
 
-    </environments>
-    <mappers>
-        <mapper resource="mapper/TbCitiesMapper.xml"/>
-    </mappers>-->
+     </environments>
+     <mappers>
+         <mapper resource="mapper/TbCitiesMapper.xml"/>
+     </mappers>-->
 </configuration>
