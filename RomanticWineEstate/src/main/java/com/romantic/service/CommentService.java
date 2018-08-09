@@ -14,7 +14,7 @@ import java.util.List;
  */
 public interface CommentService {
     /**
-     * 给一个商品添加第一条评论
+     * 给一个商品添加一条评论
      * @param comment
      * @return 是否操作成功
      */
@@ -50,10 +50,9 @@ public interface CommentService {
 
     /**
      * 查询一个商品评论下面的所有回复
-     * @param goodsId 商品id
-     * @param commentId 商品评论id
+     * @param comment
      * @return 返回一个评论下的所有回复
      */
-    List<Comment> queryCommentAllReply(String goodsId,String commentId);
+    List<Comment> queryCommentAllReply(Comment comment);
 }
 

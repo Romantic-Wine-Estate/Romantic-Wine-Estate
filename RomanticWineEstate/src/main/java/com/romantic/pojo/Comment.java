@@ -1,8 +1,9 @@
 package com.romantic.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.stereotype.Component;
 
-import java.sql.Date;
+import java.util.Date;
 import java.sql.Timestamp;
 
 /**
@@ -19,8 +20,10 @@ public class Comment {
     private String commentId;
     private String userId;
     private String goodsId;
+    private String isCommentReply;  //判断是商品评论还是评论回复：0是商品评论，1是评论回复
+    private String parentCommentId; //当前商品评论的回复的父评论id
     private String userName;
-    private String grade;   //用户评价的等级
+    private String grade;   //用户评价的等级:1-5
     private String comment; //评价
     private String picAddress;  //评论图片地址
     private Integer likeNumber; //点赞数
@@ -59,6 +62,22 @@ public class Comment {
 
     public void setGoodsId(String goodsId) {
         this.goodsId = goodsId;
+    }
+
+    public String getIsCommentReply() {
+        return isCommentReply;
+    }
+
+    public void setIsCommentReply(String isCommentReply) {
+        this.isCommentReply = isCommentReply;
+    }
+
+    public String getParentCommentId() {
+        return parentCommentId;
+    }
+
+    public void setParentCommentId(String parentCommentId) {
+        this.parentCommentId = parentCommentId;
     }
 
     public String getUserName() {
@@ -133,4 +152,8 @@ public class Comment {
         this.isAlive = isAlive;
     }
 
+    @Override
+    public String toString() {
+        return "Comment:[id:"+id+"\tcommentId:"+commentId+"\tuserId:"+userId+"\tgoodsId:"+goodsId+"\tuserName:"+userName+"\tgrade:"+grade+"\tcomment:"+comment+"]";
+    }
 }

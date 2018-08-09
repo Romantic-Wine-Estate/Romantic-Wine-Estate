@@ -6,8 +6,7 @@ import com.romantic.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
-import java.sql.Date;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -24,8 +23,23 @@ public class CommentServiceImp implements CommentService {
     @Autowired
     private CommentMapper commentMapper;
 
+    /**
+     * 给一个商品添加一条评论
+     * @param comment
+     * @return 是否操作成功
+     */
     @Override
-    public Integer addGoodsComment(Comment comment) { return null; }
+    public Integer addGoodsComment(Comment comment) {
+        if (null!=comment) {
+         //   comment.setCommentId(new Date());
+
+        } else {
+            System.out.println("Controller层传入Service层数据为空");
+
+        }
+
+        return null;
+    }
 
     @Override
     public Integer addCommentReply(Comment comment) {
@@ -48,7 +62,7 @@ public class CommentServiceImp implements CommentService {
     }
 
     @Override
-    public List<Comment> queryCommentAllReply(String goodsId, String commentId) {
+    public List<Comment> queryCommentAllReply(Comment comment) {
         return null;
     }
 }
