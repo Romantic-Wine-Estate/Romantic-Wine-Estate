@@ -9,5 +9,8 @@
         <module name="RomanticWineEstate" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="RomanticWineEstate" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
