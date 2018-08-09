@@ -25,11 +25,12 @@ public class CreateOrderNumber {
         Date date = new Date ();
         String str = simpleDateFormat.format(date);
         Random random = new Random();
-        int rannum=random.nextInt (99999);
+        int rannum = (int) ((random.nextDouble() * 9+1)*10000);// 获取5位随机数
+        //int rannum=random.nextInt (99999);
         return str+rannum ;// 当前时间 + 系统5随机生成位数
 }
-   /* public static void main(String[] args) {
+    public static void main(String[] args) {
         String fileName = CreateOrderNumber.createOrderNum();
         System.out.println(fileName);
-    }*/
+    }
 }
