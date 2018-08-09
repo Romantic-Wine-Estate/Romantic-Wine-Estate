@@ -1,7 +1,12 @@
 package com.romantic.dao;
 
 import com.romantic.pojo.TbCities;
+<<<<<<< HEAD
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Component;
+=======
 
+>>>>>>> master
 
 /**
  * Authot:{Lenovo}

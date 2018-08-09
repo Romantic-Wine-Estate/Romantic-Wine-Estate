@@ -1,6 +1,15 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework:spring-context-support:4.1.4.RELEASE">
     <CLASSES>
+<<<<<<< HEAD
+      <root url="jar://$PROJECT_DIR$/../../../maven_repository/org/springframework/spring-context-support/4.1.4.RELEASE/spring-context-support-4.1.4.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../maven_repository/org/springframework/spring-context-support/4.1.4.RELEASE/spring-context-support-4.1.4.RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../maven_repository/org/springframework/spring-context-support/4.1.4.RELEASE/spring-context-support-4.1.4.RELEASE-sources.jar!/" />
+=======
       <root url="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context-support/4.1.4.RELEASE/spring-context-support-4.1.4.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -8,6 +17,7 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context-support/4.1.4.RELEASE/spring-context-support-4.1.4.RELEASE-sources.jar!/" />
+>>>>>>> master
     </SOURCES>
   </library>
 </component>
