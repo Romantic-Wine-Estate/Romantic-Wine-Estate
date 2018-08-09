@@ -35,7 +35,7 @@ public class TestTbCart {
     @Test
     public void selectByUserId()
     {
-        List<TbCart> tbCarts =cartDao.selectByUserId("000006");
+        List<TbCart> tbCarts =cartDao.selectByUserId("000001");
         System.out.println("***************************");
         Iterator<TbCart> it= tbCarts.iterator();
         while(it.hasNext())

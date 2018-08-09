@@ -29,7 +29,24 @@
     </select>
     <!--更新数据库中某件商品的数量-->
     <update id="updateGoodsNum">
-        update tb_cart set goods_num=#{goodsNum} where user_id=#{userId} and goods_id=#{goodsId}
+        update tb_cart set goods_num=#{goodsNum}
+        where user_id=#{userId} and goods_id=#{goodsId}
     </update>
-
+    <!--查询商品库存数量-->
+    <select id="queryProductStock" resultType="Product" parameterType="String">
+        select * from tb_seller_goods where goods_id=#{goodsId}
+    </select>
+    <!--通过用户id全选或取消选择用户购物车中的商品-->
+    <update id="choose">
+        update tb_cart set is_choose=#{amount} where user_id=#{userId} and is_alive='1'
+    </update>
+    <!--根据用户id和商品id来勾选商品-->
+    <update id="chooseSingle">
+        update tb_cart set is_choose='1'
+        where user_id=#{userId} and goods_id=#{goodsId} and is_alive='1'
+    </update>
+    <!--通过用户id删除购物车中选中的商品-->
+    <update id="deleteByUserId" parameterType="String">
+        update tb_cart set is_alive='0' where user_id=#{userId} and is_choose='1'
+    </update>
 </mapper>

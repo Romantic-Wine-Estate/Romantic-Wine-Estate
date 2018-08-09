@@ -1,6 +1,7 @@
 package com.romantic.service.imp;
 
 import com.romantic.dao.TbCartDao;
+import com.romantic.pojo.Product;
 import com.romantic.pojo.TbCart;
 import com.romantic.service.TbCartService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,4 +47,26 @@ public class TbCartServiceImp implements TbCartService {
         goodsNum=tbCart.getGoodsNum()+goodsNum;
         tbCartDao.updateGoodsNum(userId,goodsId,goodsNum);
     }
+//    @Override
+//    public boolean isEnough(String goodsId, int goodsNum) {
+//        Product product=tbCartDao.queryProductStock(goodsId);
+//        return product.getStockNum()>=goodsNum?true:false;
+//    }
+
+    @Override
+    public void choose(String userId,char amount) {
+        tbCartDao.choose(userId,amount);
+    }
+
+    @Override
+    public void chooseSingle(String userId, String goodsId) {
+
+        tbCartDao.chooseSingle(userId,goodsId);
+    }
+
+    @Override
+    public void delete(String userId) {
+        tbCartDao.deleteByUserId(userId);
+    }
 }
+

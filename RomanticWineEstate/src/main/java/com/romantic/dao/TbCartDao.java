@@ -1,5 +1,6 @@
 package com.romantic.dao;
 
+import com.romantic.pojo.Product;
 import com.romantic.pojo.TbCart;
 import org.apache.ibatis.annotations.Param;
 import org.omg.CORBA.TCKind;
@@ -23,6 +24,14 @@ public interface TbCartDao {
     TbCart hasGoods(@Param("userId") String userId, @Param("goodsId") String goodsId);
     //更新商品数量
     void updateGoodsNum(@Param("userId")String userId, @Param("goodsId")String goodsId, @Param("goodsNum")int goodsNum);
+    //查询商品的库存数量
+    Product queryProductStock(String goodsId);
+    //全选
+    void choose(@Param("userId") String userId,@Param("amount") char amount);
+    //选中单件商品
+    void chooseSingle(@Param("userId") String userId,@Param("goodsId") String goodsId);
+    //软删除购物车中选中的商品
+    void deleteByUserId(@Param("userId") String userId);
 
 
 }
