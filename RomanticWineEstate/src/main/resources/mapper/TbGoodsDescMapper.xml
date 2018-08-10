@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.romantic.dao.TbGoodsDescMapper">
+
+    <!-- 李宁康的xml：关键字查找 -->
+    <select id="searchKeyWords" resultType="com.romantic.pojo.TbGoodsDesc" parameterType="java.lang.String">
+
+      select tb_goods_desc.goods_id,goods_title,goods_price,sell_num,small_pic from tb_goods_desc,tb_seller_goods
+      where tb_goods_desc.goods_id=tb_seller_goods.goods_id and  goods_title like concat(concat('%',#{keyWords}),'%')
+
+    </select>
+    <!-- 李宁康的xml：关键字查找并按价格排序 -->
+    <select id="searchKeyWordsByPrice" resultType="com.romantic.pojo.TbGoodsDesc" parameterType="java.lang.String">
+
+      select tb_goods_desc.goods_id,goods_title,goods_price,sell_num,small_pic from tb_goods_desc,tb_seller_goods
+      where tb_goods_desc.goods_id=tb_seller_goods.goods_id and  goods_title like concat(concat('%',#{keyWords}),'%')
+      order by goods_price
+    </select>
+    <!-- 李宁康的xml：关键字查找并按销量排序 -->
+    <select id="searchKeyWordsBysellNum" resultType="com.romantic.pojo.TbGoodsDesc" parameterType="java.lang.String">
+
+      select tb_goods_desc.goods_id,goods_title,goods_price,sell_num,small_pic from tb_goods_desc,tb_seller_goods
+      where tb_goods_desc.goods_id=tb_seller_goods.goods_id and  goods_title like concat(concat('%',#{keyWords}),'%')
+      order by sell_num desc
+    </select>
+
+</mapper>
