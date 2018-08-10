@@ -12,11 +12,11 @@ import java.util.List;
  * Time:17:26
  */
 public interface TbGoodsDescService {
-    public List<TbGoodsDesc> queryByPlaceOfArea(String placeOfArea,String orderMethod);
-    public List<TbGoodsDesc> queryByTaste(String taste,String orderMethod);
-    public List<TbGoodsDesc> queryByCategory(String category,String orderMethod);
-    public List<TbGoodsDesc> queryByGoodsPrice(String goodsPrice,String orderMethod);
+    //李宁康的方法：关键字查找
     List<TbGoodsDesc> searchKeyWords(List<Word> keyWords);
-
+    //李宁康的方法：关键字查找并按价格排序
+    List<TbGoodsDesc> searchKeyWordsByPrice(List<Word> keyWords);
+    //李宁康的方法：关键字查找并按销量排序
+    List<TbGoodsDesc> searchKeyWordsBysellNum(List<Word> keyWords);
 
 }

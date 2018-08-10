@@ -20,96 +20,7 @@ import java.util.List;
 public class TbGoodsDescServiceImp implements TbGoodsDescService{
     @Autowired
     private TbGoodsDescMapper tbGoodsDescMapper;
-    @Override
-    public List<TbGoodsDesc> queryByPlaceOfArea(String placeOfArea,String orderMethod) {
-        List<TbGoodsDesc>  tempList=tbGoodsDescMapper.queryByPlaceOfArea(placeOfArea);
-        if(orderMethod.equals("default"))
-        {
-            return tempList;
-        }
-        if(orderMethod.equals("orderByPrice"))
-        {
-            return TbGoodsDesc.sortByPrice(tempList);
-        }
-        else
-        {
-            return TbGoodsDesc.sortBySellNum(tempList);
-        }
-    }
-    @Override
-    public List<TbGoodsDesc> queryByTaste(String taste,String orderMethod) {
-        List<TbGoodsDesc>  tempList= tbGoodsDescMapper.queryByTaste(taste);
-        if(orderMethod.equals("default"))
-        {
-            return tempList;
-        }
-        if(orderMethod.equals("orderByPrice"))
-        {
-            return TbGoodsDesc.sortByPrice(tempList);
-        }
-        else
-        {
-            return TbGoodsDesc.sortBySellNum(tempList);
-        }
-    }
-    @Override
-    public List<TbGoodsDesc> queryByCategory(String category,String orderMethod) {
-        List<TbGoodsDesc>  tempList= tbGoodsDescMapper.queryByCategory(category);
-        if(orderMethod.equals("default"))
-        {
-            return tempList;
-        }
-        if(orderMethod.equals("orderByPrice"))
-        {
-            return TbGoodsDesc.sortByPrice(tempList);
-        }
-        else
-        {
-            return TbGoodsDesc.sortBySellNum(tempList);
-        }
-    }
-    @Override
-    public List<TbGoodsDesc> queryByGoodsPrice(String goodsPrice,String orderMethod) {
-        if (goodsPrice.contains("-")) {
-            String priceString1[] = goodsPrice.split("\\-");
-            int priceInt1[] = new int[priceString1.length];
-            for (int i = 0; i < priceString1.length; i++) {
-                priceInt1[i] = Integer.parseInt(priceString1[i]);
-            }
-            List<TbGoodsDesc>  tempList= tbGoodsDescMapper.queryByGoodsPrice1(priceInt1[0], priceInt1[1]);
-            if(orderMethod.equals("default"))
-            {
-                return tempList;
-            }
-            if(orderMethod.equals("orderByPrice"))
-            {
-                return TbGoodsDesc.sortByPrice(tempList);
-            }
-            else
-            {
-                return TbGoodsDesc.sortBySellNum(tempList);
-            }
-        } else {
-            List<TbGoodsDesc>  tempList= tbGoodsDescMapper.queryByGoodsPrice2(Integer.parseInt(goodsPrice));
-            if(orderMethod.equals("default"))
-            {
-                return tempList;
-            }
-            if(orderMethod.equals("orderByPrice"))
-            {
-                return TbGoodsDesc.sortByPrice(tempList);
-            }
-            else
-            {
-                return TbGoodsDesc.sortBySellNum(tempList);
-            }
-
-        }
-
-
-    }
-
-    @Override
+    //李宁康的方法：关键词查找
     public List<TbGoodsDesc> searchKeyWords(List<Word> keyWords) {
         List<TbGoodsDesc> result=null;
         Iterator<Word> it=keyWords.iterator();
@@ -118,7 +29,28 @@ public class TbGoodsDescServiceImp implements TbGoodsDescService{
             String aa=it.next().toString();
             result=tbGoodsDescMapper.searchKeyWords(aa);
         }
-
+        return result;
+    }
+    //李宁康的方法：关键词查找并按价格排序
+    public List<TbGoodsDesc> searchKeyWordsByPrice(List<Word> keyWords) {
+        List<TbGoodsDesc> result=null;
+        Iterator<Word> it=keyWords.iterator();
+        while(it.hasNext())
+        {
+            String aa=it.next().toString();
+            result=tbGoodsDescMapper.searchKeyWords(aa);
+        }
+        return result;
+    }
+    //李宁康的方法：关键词查找并按销量排序
+    public List<TbGoodsDesc> searchKeyWordsBysellNum(List<Word> keyWords) {
+        List<TbGoodsDesc> result=null;
+        Iterator<Word> it=keyWords.iterator();
+        while(it.hasNext())
+        {
+            String aa=it.next().toString();
+            result=tbGoodsDescMapper.searchKeyWords(aa);
+        }
         return result;
     }
 

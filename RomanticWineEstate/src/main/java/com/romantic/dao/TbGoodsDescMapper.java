@@ -11,13 +11,9 @@ import java.util.List;
  * Date:2018/8/7
  * Time:22:51
  */
+
 public interface TbGoodsDescMapper {
-    public List<TbGoodsDesc> queryByPlaceOfArea(@Param("placeOfArea") String placeOfArea);
-    public List<TbGoodsDesc> queryByTaste(@Param("taste") String taste);
-    public List<TbGoodsDesc> queryByCategory(@Param("category") String category);
-    public List<TbGoodsDesc> queryByGoodsPrice1(@Param("minPrice") int minPrice,@Param("maxPrice") int maxPrice);
-    public List<TbGoodsDesc> queryByGoodsPrice2(@Param("price") int price);
-    /*
+    /*李宁康的方法：关键字查找
      * 通过关键词查询商品列表
      *
      * @param     keyWoeds    传入的关键词
@@ -25,7 +21,10 @@ public interface TbGoodsDescMapper {
      * @throws
      *
      * */
-    List<TbGoodsDesc>   searchKeyWords(String keyWords);
+    List<TbGoodsDesc>   searchKeyWords(@Param("keyWords") String keyWords);
 
+    List<TbGoodsDesc>   searchKeyWordsByPrice(@Param("keyWords") String keyWords);
+
+    List<TbGoodsDesc>   searchKeyWordsBysellNum(@Param("keyWords") String keyWords);
 
 }

@@ -1,6 +1,7 @@
 package com.romantic.pojo;
 
 import java.math.BigDecimal;
+import java.sql.Timestamp;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
@@ -8,57 +9,49 @@ import java.util.List;
 
 /**
  * Create with IntelliJ IDEA
- * Author:Songwenjing
- * Date:2018/8/7
- * Time:22:56
+ * Author:Liningkang
+ * Date:2018/8/10
+ * Time:10:16
  */
+
 public class TbGoodsDesc {
-    private Long id;
+    private Integer sellNum;
+    private long id;
     private String goodsId;
-    private String smallPic;
     private String goodsTitle;
-    private long sellNum;
     private BigDecimal goodsPrice;
-
     private String placeOfArea;
-
     private String category;
-
     private String taste;
-
     private String goodsMinType;
-
     private String brand;
-
     private String sendTimeType;
-
     private String goodsImage;
-
+    private String smallPic;
     private Date dateOfManufacture;
-
     private String qualityDate;
-
     private String sweetness;
-
     private String material;
-
-    private Float alcoholicStrength;
-
+    private float alcoholicStrength;
     private String storageMethod;
-
-    private Integer capacity;
-
+    private int capacity;
     private Date createTime;
-
-    private Date updateTime;
-
+    private Timestamp updateTime;
     private String isAlive;
 
-    public Long getId() {
+    public Integer getSellNum() {
+        return sellNum;
+    }
+
+    public void setSellNum(Integer sellNum) {
+        this.sellNum = sellNum;
+    }
+
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -70,28 +63,12 @@ public class TbGoodsDesc {
         this.goodsId = goodsId;
     }
 
-    public String getSmallPic() {
-        return smallPic;
-    }
-
-    public void setSmallPic(String smallPic) {
-        this.smallPic = smallPic;
-    }
-
     public String getGoodsTitle() {
         return goodsTitle;
     }
 
     public void setGoodsTitle(String goodsTitle) {
         this.goodsTitle = goodsTitle;
-    }
-
-    public long getSellNum() {
-        return sellNum;
-    }
-
-    public void setSellNum(long sellNum) {
-        this.sellNum = sellNum;
     }
 
     public BigDecimal getGoodsPrice() {
@@ -158,6 +135,14 @@ public class TbGoodsDesc {
         this.goodsImage = goodsImage;
     }
 
+    public String getSmallPic() {
+        return smallPic;
+    }
+
+    public void setSmallPic(String smallPic) {
+        this.smallPic = smallPic;
+    }
+
     public Date getDateOfManufacture() {
         return dateOfManufacture;
     }
@@ -190,11 +175,11 @@ public class TbGoodsDesc {
         this.material = material;
     }
 
-    public Float getAlcoholicStrength() {
+    public float getAlcoholicStrength() {
         return alcoholicStrength;
     }
 
-    public void setAlcoholicStrength(Float alcoholicStrength) {
+    public void setAlcoholicStrength(float alcoholicStrength) {
         this.alcoholicStrength = alcoholicStrength;
     }
 
@@ -206,11 +191,11 @@ public class TbGoodsDesc {
         this.storageMethod = storageMethod;
     }
 
-    public Integer getCapacity() {
+    public int getCapacity() {
         return capacity;
     }
 
-    public void setCapacity(Integer capacity) {
+    public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
 
@@ -222,11 +207,11 @@ public class TbGoodsDesc {
         this.createTime = createTime;
     }
 
-    public Date getUpdateTime() {
+    public Timestamp getUpdateTime() {
         return updateTime;
     }
 
-    public void setUpdateTime(Date updateTime) {
+    public void setUpdateTime(Timestamp updateTime) {
         this.updateTime = updateTime;
     }
 
@@ -238,4 +223,32 @@ public class TbGoodsDesc {
         this.isAlive = isAlive;
     }
 
+    @Override
+    public String toString() {
+        return "TbGoodsDesc{" +
+                "sellNum=" + sellNum +
+                ", id=" + id +
+                ", goodsId='" + goodsId + '\'' +
+                ", goodsTitle='" + goodsTitle + '\'' +
+                ", goodsPrice=" + goodsPrice +
+                ", placeOfArea='" + placeOfArea + '\'' +
+                ", category='" + category + '\'' +
+                ", taste='" + taste + '\'' +
+                ", goodsMinType='" + goodsMinType + '\'' +
+                ", brand='" + brand + '\'' +
+                ", sendTimeType='" + sendTimeType + '\'' +
+                ", goodsImage='" + goodsImage + '\'' +
+                ", smallPic='" + smallPic + '\'' +
+                ", dateOfManufacture=" + dateOfManufacture +
+                ", qualityDate='" + qualityDate + '\'' +
+                ", sweetness='" + sweetness + '\'' +
+                ", material='" + material + '\'' +
+                ", alcoholicStrength=" + alcoholicStrength +
+                ", storageMethod='" + storageMethod + '\'' +
+                ", capacity=" + capacity +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
+                ", isAlive='" + isAlive + '\'' +
+                '}';
+    }
 }

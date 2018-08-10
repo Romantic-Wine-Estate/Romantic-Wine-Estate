@@ -16,30 +16,35 @@ import static org.junit.Assert.*;
 /**
  * Create with IntelliJ IDEA
  * Author:LiNingKang
- * Data:2018/8/9
- * Time:15:02
+ * Data:2018/8/10
+ * Time:19:42
  */
-
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({
         "classpath:spring-mybatis.xml",
         "classpath:spring-mvc.xml"})
-public class TbGoodsDescServiceTest {
+
+
+public class TbGoodsDescServiceSortTest {
 
     @Autowired
     private TbGoodsDescService tbGoodsDescService;
 
     @Test
-    public void testSearchKeyWords()
-    {
-        String str ="法国干红葡萄酒";
+    public void searchKeyWordsByPrice() {
+
+        String str ="法国";
         List<Word> words = WordSegmenter.seg(str);
-        List<TbGoodsDesc> sesorce=tbGoodsDescService.searchKeyWords(words);
+        List<TbGoodsDesc> sesorce=tbGoodsDescService.searchKeyWordsByPrice(words);
 
     }
 
+    @Test
+    public void searchKeyWordsBysellNum() {
 
+        String str ="法国";
+        List<Word> words = WordSegmenter.seg(str);
+        List<TbGoodsDesc> sesorce=tbGoodsDescService.searchKeyWordsBysellNum(words);
 
-
-
+    }
 }

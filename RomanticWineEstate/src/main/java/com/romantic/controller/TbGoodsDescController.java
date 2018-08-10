@@ -28,49 +28,40 @@ import java.util.List;
  * Time:21:17
  */
 @Controller
+@RequestMapping("/search")
 public class TbGoodsDescController {
 
     @Autowired
     private TbGoodsDescService tbGoodsDescService;
-
+    //李宁康的方法：关键词查找
     @RequestMapping("/keysearch.htm/{keyWords}")
     @ResponseBody
     List<TbGoodsDesc> searchKeyWords(String keyWords){
 
-        //String str ="法国";
+        List<Word> words = WordSegmenter.seg(keyWords);
+        List<TbGoodsDesc> sesorce=tbGoodsDescService.searchKeyWords(words);
+
+        return sesorce;
+    }
+    //李宁康的方法：关键词查找并按价格排序
+    @RequestMapping("/keysearchByPrice.htm/{keyWords}")
+    @ResponseBody
+    List<TbGoodsDesc> searchKeyWordsByPrice(String keyWords){
+
+        List<Word> words = WordSegmenter.seg(keyWords);
+        List<TbGoodsDesc> sesorce=tbGoodsDescService.searchKeyWords(words);
+
+        return sesorce;
+    }
+    //李宁康的方法：关键词查找并按销量排序
+    @RequestMapping("/keysearchBysellNum.htm/{keyWords}")
+    @ResponseBody
+    List<TbGoodsDesc> searchKeyWordsBysellNum(String keyWords){
+
         List<Word> words = WordSegmenter.seg(keyWords);
         List<TbGoodsDesc> sesorce=tbGoodsDescService.searchKeyWords(words);
 
         return sesorce;
     }
 
-    @RequestMapping("/placeOfArea.htm/{placeOfArea,orderMethod}")
-    @ResponseBody
-    public List<TbGoodsDesc> queryByPlaceOfArea(String placeOfArea,String orderMethod)
-    {
-        return  tbGoodsDescService.queryByPlaceOfArea(placeOfArea,orderMethod);
-    }
-
-    @RequestMapping("/taste.htm/{taste,orderMethod}")
-    @ResponseBody
-    public List<TbGoodsDesc> queryByTaste(String taste,String orderMethod)
-    {
-        return  tbGoodsDescService.queryByTaste(taste,orderMethod);
-    }
-
-
-    @RequestMapping("/category.htm/{category,orderMethod}")
-    @ResponseBody
-    public List<TbGoodsDesc> queryByCategory(String category,String orderMethod)
-    {
-        return  tbGoodsDescService.queryByCategory(category,orderMethod);
-    }
-
-    @RequestMapping("/goodsPrice.htm/{goodsPrice,orderMethod}")
-    @ResponseBody
-    public List<TbGoodsDesc> queryByGoodsPrice(String goodsPrice,String OrderMethod)
-    {
-        System.out.println(goodsPrice);
-        return  tbGoodsDescService.queryByGoodsPrice(goodsPrice,OrderMethod);
-    }
 }
