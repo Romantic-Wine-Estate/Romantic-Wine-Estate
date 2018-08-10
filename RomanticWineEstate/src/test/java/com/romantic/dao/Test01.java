@@ -17,7 +17,7 @@ import javax.annotation.Resource;
 @ContextConfiguration(value = {"classpath:spring-mybatis.xml"})
 public class Test01 {
     @Resource
-    private TbCitiesMapper tb_provincesDao;
+    private TbCitiesDao tb_provincesDao;
     @Test
     public void testqueryById() {
         String  cityId="110200";
@@ -25,11 +25,4 @@ public class Test01 {
         System.out.println(tbProvinces.toString());
     }
 
-    @Test
-    public void test() {
-        System.out.println(Math.random());
-        System.out.println(Math.random()*9);
-        System.out.println(Math.random()+9+1);
-        System.out.println((Math.random()*9+1)*100000);
-    }
 }

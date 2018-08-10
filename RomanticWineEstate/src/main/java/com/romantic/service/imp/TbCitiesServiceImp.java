@@ -1,6 +1,6 @@
 package com.romantic.service.imp;
 
-import com.romantic.dao.TbCitiesMapper;
+import com.romantic.dao.TbCitiesDao;
 import com.romantic.pojo.TbCities;
 import com.romantic.service.TbCitiesService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,11 +13,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class TbCitiesServiceImp implements TbCitiesService {
     @Autowired
-    private TbCitiesMapper tbCitiesMapper;
+    private TbCitiesDao tbCitiesDao;
 
     @Override
     public TbCities queryByCityId(String cityId)
     {
-        return tbCitiesMapper.queryByCityId(cityId);
+        return tbCitiesDao.queryByCityId(cityId);
     }
 }
