@@ -17,7 +17,6 @@ public class TbCities {
     private String isAlive;
 
 
-
     public long getId() {
 
         return id;
