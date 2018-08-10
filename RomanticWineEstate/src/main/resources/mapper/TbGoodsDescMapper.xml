@@ -31,5 +31,12 @@
       where tb_goods_desc.goods_id=tb_seller_goods.goods_id and tb_goods_desc.is_alive='1' and tb_seller_goods.is_alive='1'and goods_price > #{price}
     </select>
 
+    <select id="searchKeyWords" resultType="com.romantic.pojo.TbGoodsDesc" parameterType="java.lang.String">
+
+      select id,goods_title,goods_price,sell_num,small_pic from tb_goods_desc
+      where goods_title like concat(concat('%',#{keyWords}),'%')
+
+    </select>
+
 
 </mapper>

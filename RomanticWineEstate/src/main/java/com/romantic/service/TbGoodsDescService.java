@@ -1,6 +1,7 @@
 package com.romantic.service;
 
 import com.romantic.pojo.TbGoodsDesc;
+import org.apdplat.word.segmentation.Word;
 
 import java.util.List;
 
@@ -15,7 +16,7 @@ public interface TbGoodsDescService {
     public List<TbGoodsDesc> queryByTaste(String taste,String orderMethod);
     public List<TbGoodsDesc> queryByCategory(String category,String orderMethod);
     public List<TbGoodsDesc> queryByGoodsPrice(String goodsPrice,String orderMethod);
-
+    List<TbGoodsDesc> searchKeyWords(List<Word> keyWords);
 
 
 }
