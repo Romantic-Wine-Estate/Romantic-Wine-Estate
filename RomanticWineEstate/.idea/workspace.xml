@@ -13,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CommentDao.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CommentDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/dao/CommentDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1364">
@@ -31,14 +31,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentServiceTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CommentServiceTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/romantic/service/CommentServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1079">
-              <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+            <state relative-caret-position="-1012">
+              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TbCitiesController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/controller/TbCitiesController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -99,7 +108,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="913" />
     <option name="width" value="1014" />
     <option name="height" value="1038" />
@@ -466,12 +475,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CommentServiceTest_queryCommentAllReply - 2018.08.10 at 21h 01m 30s.xml">
-      <configuration name="CommentServiceTest.queryCommentAllReply" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommentServiceTest_queryCommentAllReply - 2018.08.10 at 21h 02m 40s.xml">
-      <configuration name="CommentServiceTest.queryCommentAllReply" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CommentServiceTest_queryCommentAllReply - 2018.08.10 at 21h 03m 49s.xml">
       <configuration name="CommentServiceTest.queryCommentAllReply" configurationId="JUnit" />
     </history-entry>
@@ -496,13 +499,18 @@
     <history-entry file="CommentServiceTest_addLikeNum - 2018.08.10 at 22h 51m 48s.xml">
       <configuration name="CommentServiceTest.addLikeNum" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CommentServiceTest_queryGoodsAllComments - 2018.08.10 at 23h 41m 35s.xml">
+      <configuration name="CommentServiceTest.queryGoodsAllComments" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommentServiceTest_addLikeNum - 2018.08.10 at 23h 41m 46s.xml">
+      <configuration name="CommentServiceTest.addLikeNum" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29947000" />
+    <option name="totallyTimeSpent" value="30672000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50087106" side_tool="true" weight="0.21902017" />
@@ -522,7 +530,7 @@
       <window_info id="Image Layers" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991289" visible="true" weight="0.22079772" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991289" visible="true" weight="0.116809115" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" weight="0.32905984" />
@@ -664,13 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/controller/TbCitiesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/romantic/utils/TestFileUpload.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -734,13 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/dao/CommentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1364">
-          <caret line="65" column="83" selection-start-line="65" selection-start-column="83" selection-end-line="65" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/service/CommentService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -750,11 +744,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/romantic/service/CommentServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1079">
-          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        <state relative-caret-position="-1012">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/controller/TbCitiesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romantic/dao/CommentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1364">
+          <caret line="65" column="83" selection-start-line="65" selection-start-column="83" selection-end-line="65" selection-end-column="83" />
         </state>
       </provider>
     </entry>
@@ -837,7 +845,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
