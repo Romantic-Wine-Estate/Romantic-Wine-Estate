@@ -1,0 +1,13 @@
+
+S
+squid:S106"9Replace this use of System.out or System.err by a logger.(œú—'8ºÈ¥şÑ,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ8ºÈ¥şÑ,
+Esquid:S1481")Remove this unused "year" local variable.(µÉôÎ8ºÈ¥şÑ,
+Fsquid:S1481"*Remove this unused "month" local variable.(¿»«ã8ºÈ¥şÑ,
+Dsquid:S1481"(Remove this unused "day" local variable.(éãƒš8ºÈ¥şÑ,
+Jsquid:S1481")Remove this unused "hour" local variable.(ôìÖòÿÿÿÿÿ8ºÈ¥şÑ,
+Ysquid:S1854"8Remove this useless assignment to local variable "hour".(ôìÖòÿÿÿÿÿ8ºÈ¥şÑ,
+Ssquid:S1854"7Remove this useless assignment to local variable "day".(éãƒš8ºÈ¥şÑ,
+Usquid:S1854"9Remove this useless assignment to local variable "month".(¿»«ã8ºÈ¥şÑ,
+Tsquid:S1854"8Remove this useless assignment to local variable "year".(µÉôÎ8ºÈ¥şÑ,
