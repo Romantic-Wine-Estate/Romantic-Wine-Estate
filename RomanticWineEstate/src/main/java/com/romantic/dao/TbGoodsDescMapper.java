@@ -1,7 +1,6 @@
 package com.romantic.dao;
 
 import com.romantic.pojo.TbGoodsDesc;
-import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
