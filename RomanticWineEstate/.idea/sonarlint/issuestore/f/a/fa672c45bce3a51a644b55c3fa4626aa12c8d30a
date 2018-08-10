@@ -1,17 +1,0 @@
-
-isquid:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(Œ’¼÷8è•¡ÿÑ,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(´ÚÙÑ8è•¡ÿÑ,
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ì—¡Š8è•¡ÿÑ,
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.( †Ðž8è•¡ÿÑ,
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(áçöéúÿÿÿÿ8è•¡ÿÑ,
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(²¬ª‰8è•¡ÿÑ,
-Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8è•¡ÿÑ,
-Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8è•¡ÿÑ,
-Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8è•¡ÿÑ,
-ksquid:S2674"JCheck the return value of the "read" call to see how many bytes were read.(±Éöúÿÿÿÿ8è•¡ÿÑ,
-[squid:S1118":Add a private constructor to hide the implicit public one.(ñŽÝ¥ùÿÿÿÿ8è•¡ÿÑ,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8è•¡ÿÑ,

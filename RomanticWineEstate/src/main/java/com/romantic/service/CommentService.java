@@ -54,5 +54,13 @@ public interface CommentService {
      * @return 返回一个评论下的所有回复
      */
     List<Comment> queryCommentAllReply(Comment comment);
+
+    /**
+     * 用户给一个商品下面的一条商品评论
+     * @param commentId 评论id
+     * @param goodsId 商品id
+     * @return 是否点赞成功
+     */
+    Integer addLikeNum(String commentId, String goodsId);
 }
 

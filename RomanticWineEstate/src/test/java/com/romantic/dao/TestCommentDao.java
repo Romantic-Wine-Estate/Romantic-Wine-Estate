@@ -24,7 +24,7 @@ import java.util.List;
 @ContextConfiguration({"classpath:spring-mybatis.xml"})
 public class TestCommentDao {
     @Resource
-    CommentMapper commentMapper;
+    CommentDao commentDao;
 
     @Test
     public void testInsertGoodsComment() {
@@ -32,9 +32,11 @@ public class TestCommentDao {
         comment.setCommentId("003");
         comment.setUserId("002");
         comment.setGoodsId("001");
-        comment.setUserName("周祎辰");
+        comment.setIsCommentReply("1");
+        comment.setParentCommentId("111");
+        comment.setUserName("小李");
         comment.setGrade("5");
-        comment.setComment("物美价廉");
+        comment.setComment("京东快递真的快");
         comment.setPicAddress("001.png");
         comment.setPrefixMatch("a-b-c-d");
         comment.setLikeNumber(101);
@@ -42,7 +44,7 @@ public class TestCommentDao {
         comment.setIsAlive("1");
 
         System.out.println(comment);
-        Integer a = commentMapper.insertGoodsComment(comment);
+        Integer a = commentDao.insertGoodsComment(comment);
         System.out.println(a);
     }
 
@@ -50,24 +52,27 @@ public class TestCommentDao {
     public void testDeleteGoodsComment() {
         Comment comment = new Comment();
         comment.setCommentId("001");
-        comment.setUserId("001");
-        comment.setGoodsId("001");
-        Integer b = commentMapper.deleteGoodsComment(comment);
+        comment.setUserId("002");
+        comment.setGoodsId("002");
+        Integer b = commentDao.deleteGoodsComment(comment);
         System.out.println(b);
     }
 
     @Test
     public void testDeleteCommentReply() {
         Comment comment = new Comment();
-        comment.setCommentId("002");
-        Integer b = commentMapper.deleteCommentReply(comment);
+        comment.setCommentId("001");
+        comment.setUserId("002");
+        comment.setGoodsId("001");
+
+        Integer b = commentDao.deleteCommentReply(comment);
         System.out.println(b);
     }
 
     @Test
     public void testSelectGoodsAllComments() {
 
-        List<Comment> list = commentMapper.selectGoodsAllComments("001");
+        List<Comment> list = commentDao.selectGoodsAllComments("001");
         for (Comment a : list) {
             System.out.println(a);
         }
@@ -78,7 +83,7 @@ public class TestCommentDao {
         Comment comment = new Comment();
         comment.setParentCommentId("111");
         comment.setGoodsId("001");
-        List<Comment> list = commentMapper.selectCommentAllReply(comment);
+        List<Comment> list = commentDao.selectCommentAllReply(comment);
         for (Comment a : list) {
             System.out.println(a);
         }
