@@ -1,7 +1,6 @@
 package com.romantic.dao;
 
 import com.romantic.pojo.TbCities;
-import org.apache.ibatis.annotations.Param;
 
 /**
  * Authot:{Lenovo}
@@ -9,5 +8,5 @@ import org.apache.ibatis.annotations.Param;
  */
 
 public interface TbCitiesMapper {
-    TbCities queryByCityId(@Param("cityId") String cityId);
+    TbCities queryByCityId( String cityId);
 }

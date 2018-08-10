@@ -14,7 +14,7 @@ import javax.annotation.Resource;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 //告诉junit spring配置文件
-@ContextConfiguration({"classpath:spring-mybatis.xml"})
+@ContextConfiguration(value = {"classpath:spring-mybatis.xml"})
 public class Test01 {
     @Resource
     private TbCitiesMapper tb_provincesDao;

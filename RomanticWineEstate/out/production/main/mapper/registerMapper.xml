@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.romantic.dao.registerMapper">
+
+    <resultMap type="register" id="registerResult">
+        <result property="userid" column="user_id" />
+        <result property="registerName" column="user_name" />
+        <result property="registerpassword" column="password" />
+        <result property="registerMoblie" column="phone" />
+        <result property="registerEmail" column="email" />
+    </resultMap>
+
+    <insert id="insertregister"   parameterType="register">
+		insert into `tb_user`(user_id,user_name,password,phone,email) values (#{userid},#{registerName},#{registerpassword},#{registerMoblie},#{registerEmail})
+	</insert>
+
+
+</mapper>

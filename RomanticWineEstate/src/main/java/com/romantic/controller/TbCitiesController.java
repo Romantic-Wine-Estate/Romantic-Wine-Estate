@@ -26,6 +26,7 @@ public class TbCitiesController {
     @RequestMapping("/add.htm")
     @ResponseBody
     public TbCities queryByCityId(){
+
         return tbCitiesService.queryByCityId("110200");
     }
 
