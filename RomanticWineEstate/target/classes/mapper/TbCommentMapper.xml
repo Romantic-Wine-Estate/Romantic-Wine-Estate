@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.romantic.dao.CommentDao" >
+<mapper namespace="com.romantic.dao.TbCommentDao" >
 
     <sql id="Base_Column_List">
       comment_id, user_id, goods_id, is_comment_reply, parent_comment_id, user_name, grade, comment, pic_address, Like_number, Prefix_match, create_time, is_alive
     </sql>
 
     <!--插入一条商品评论-->
-    <insert id="insertGoodsComment" parameterType="com.romantic.pojo.Comment" >
+    <insert id="insertGoodsComment" parameterType="com.romantic.pojo.TbComment" >
       INSERT INTO tb_comment (
      <include refid="Base_Column_List" />
 --         comment_id, user_id, goods_id, user_name, grade, comment, pic_address, Like_number, Prefix_match, create_time, is_alive
@@ -18,7 +18,7 @@
     </insert>
 
     <!--插入一条商品评论的回复-->
-    <insert id="insertCommentReply" parameterType="com.romantic.pojo.Comment">
+    <insert id="insertCommentReply" parameterType="com.romantic.pojo.TbComment">
       INSERT INTO tb_comment (
         <include refid="Base_Column_List" />
       ) VALUES (
@@ -28,25 +28,26 @@
     </insert>
 
     <!--删除一条商品评论（同时删除这条商品评论底下的所有回复，软删使用update）-->
-    <update id="deleteGoodsComment" parameterType="com.romantic.pojo.Comment">
+    <update id="deleteGoodsComment" parameterType="com.romantic.pojo.TbComment">
       UPDATE tb_comment SET is_alive=0 WHERE comment_id=#{commentId} AND user_id=#{userId} AND goods_id=#{goodsId} AND is_comment_reply=0 AND is_alive=1
     </update>
 
     <!--删除一条商品评论的回复(软删)-->
-    <update id="deleteCommentReply" parameterType="com.romantic.pojo.Comment">
+    <update id="deleteCommentReply" parameterType="com.romantic.pojo.TbComment">
       UPDATE tb_comment SET is_alive=0 WHERE comment_id=#{commentId} AND user_id=#{userId} AND goods_id=#{goodsId} AND is_comment_reply=1 AND is_alive=1
     </update>
 
     <!--查询一种商品底下的全部商品评论-->
-    <select id="selectGoodsAllComments" parameterType="java.lang.String" resultType="com.romantic.pojo.Comment">
+    <select id="selectGoodsAllComments" parameterType="java.lang.String" resultType="com.romantic.pojo.TbComment">
       SELECT * FROM tb_comment WHERE goods_id=#{goodsId} AND is_comment_reply=0 AND is_alive=1
     </select>
 
     <!--查询一条商品评论底下的所有回复-->
-    <select id="selectCommentAllReply" parameterType="com.romantic.pojo.Comment" resultType="com.romantic.pojo.Comment">
+    <select id="selectCommentAllReply" parameterType="com.romantic.pojo.TbComment" resultType="com.romantic.pojo.TbComment">
       SELECT * FROM tb_comment WHERE goods_id=#{comment.goodsId} AND parent_comment_id=#{comment.parentCommentId} AND is_comment_reply=1 AND is_alive=1
     </select>
 
+    <!--用户给一个商品下面的一条商品评论点赞-->
     <update id="addCommentLikeNum">
         UPDATE tb_comment SET Like_number=Like_number+1 WHERE comment_id=#{commentId} AND goods_id=#{goodsId} AND is_comment_reply=0 AND is_alive=1
     </update>
