@@ -1,10 +1,9 @@
 package com.romantic.pojo;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.stereotype.Component;
 
-import java.util.Date;
 import java.sql.Timestamp;
+import java.util.Date;
 
 /**
  * Create with IntelliJ IDEA
@@ -15,7 +14,7 @@ import java.sql.Timestamp;
  * 评论表的实体类
  */
 @Component
-public class Comment {
+public class TbComment {
     private Long id;
     private String commentId;
     private String userId;

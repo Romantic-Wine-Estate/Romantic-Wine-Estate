@@ -1,6 +1,6 @@
 package com.romantic.dao;
 
-import com.romantic.pojo.Comment;
+import com.romantic.pojo.TbComment;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -13,52 +13,52 @@ import java.util.List;
  * ---------------------------------------
  * 评论模块的dao层接口
  */
-public interface CommentDao {
+public interface TbCommentDao {
 
     /**
      * 插入一条商品评论
-     * @param comment
+     * @param tbComment
      * @return 是否插入成功
      */
-    Integer insertGoodsComment(Comment comment);
+    Integer insertGoodsComment(TbComment tbComment);
 
     /**
      * 插入一条商品评论的回复
-     * @param comment
+     * @param tbComment
      * @return 是否插入成功
      */
-    Integer insertCommentReply(Comment comment);
+    Integer insertCommentReply(TbComment tbComment);
 
     /**
      * 删除一条商品评论（同时删除这条商品评论底下的所有回复，软删）
-     * @param comment
+     * @param tbComment
      * @return 是否删除成功
      */
-    Integer deleteGoodsComment(Comment comment);
+    Integer deleteGoodsComment(TbComment tbComment);
 
     /**
      * 删除一条商品评论的回复(软删)
-     * @param comment
+     * @param tbComment
      * @return 是否删除成功
      */
-    Integer deleteCommentReply(Comment comment);
+    Integer deleteCommentReply(TbComment tbComment);
 
     /**
      * 查询一种商品底下的全部商品评论
      * @param goodsId 商品id
      * @return 当前商品下的全部商品评论
      */
-    List<Comment> selectGoodsAllComments(@Param("goodsId") String goodsId);
+    List<TbComment> selectGoodsAllComments(@Param("goodsId") String goodsId);
 
     /**
      * 查询一条商品评论底下的所有回复
-     * @param comment
+     * @param tbComment
      * @return 当前商品评论下的所有回复
      */
-    List<Comment> selectCommentAllReply(@Param("comment") Comment comment);
+    List<TbComment> selectCommentAllReply(@Param("comment") TbComment tbComment);
 
     /**
-     * 用户给一个商品下面的一条商品评论
+     * 用户给一个商品下面的一条商品评论点赞
      * @param commentId 评论id
      * @param goodsId 商品id
      * @return 是否点赞成功
