@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.romantic.dao.TbOrderDao" >
+    <sql id="Base_Column_List" >
+    id ,order_num ,seller_id ,payment ,payment_type ,post_fee ,status ,payment_time ,consign_time ,end_time ,
+    close_time,shipping_name  ,shipping_code, user_id ,buyer_message ,buyer_nick ,buyer_rate  ,receiver_area_name , receiver_mobile ,receiver ,expire, create_time,  update_time ,is_alive
+    </sql>
+    <select id="selectByOrderIdAndUserId" resultType="TbOrder">
+        SELECT
+        <include refid="Base_Column_List"></include>
+        from tb_order
+        where order_num= #{orderNum}
+        and user_id=#{userId}
+        and is_alive='1'
+    </select>
+
+
+
+
+</mapper>
