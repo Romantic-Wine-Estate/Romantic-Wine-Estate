@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-
 <mapper namespace="com.romantic.dao.TbCitiesDao" >
-
     <sql id="Base_Column_List" >
     id,city_id ,city ,province_id ,create_time,update_time,is_alive
     </sql>
